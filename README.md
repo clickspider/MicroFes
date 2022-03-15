@@ -15,6 +15,6 @@ yarn start
 
 ### Demo images
 ![Stock list](HomePage.png)
-![Stock list](LikeCart.png)
 ![Stock list](episode_content.png)
 ![Stock menu](favPodcasts.png)
+![Stock list](LikeCart.png)
