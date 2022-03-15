@@ -7,10 +7,10 @@ import Header from "home/Header";
 import Footer from "home/Footer";
 import HomeContent from "home/HomeContent";
 import { EpisodesProvider } from "home/store";
-import { LikeCartProvider } from "likeCart/store";
+import { LikeCartProvider } from "like_cart/store";
 
 import EpisodeContent from "content/EpisodeContent";
-import CartContent from "likeCart/CartContent";
+import CartContent from "like_cart/CartContent";
 
 export default function MainLayout() {
   return (

@@ -4,7 +4,7 @@ import { useEpisodes } from "home/store";
 import { Episode } from "home/src/HomeContent";
 import MediaPlayer from "player/MediaPlayer";
 
-import LikeBtn from "likeCart/LikeBtn";
+import LikeBtn from "like_cart/LikeBtn";
 
 const defaultEpisode: Episode = {
   title: "",

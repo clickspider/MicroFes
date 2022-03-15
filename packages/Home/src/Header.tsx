@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import MiniLikeCart from "likeCart/MiniLikeCart";
+import MiniLikeCart from "like_cart/MiniLikeCart";
 
 const Header = () => (
   <header className="p-5 bg-blue-500 text-white text-3xl font-bold">

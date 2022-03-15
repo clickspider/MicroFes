@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 
-import { Episode } from "home/src/HomeContent";
-import LikeBtn from "likeCart/LikeBtn";
+import { Episode } from "./HomeContent";
+import LikeBtn from "like_cart/LikeBtn";
 
 interface podcastCardProps {
   episode: Episode;

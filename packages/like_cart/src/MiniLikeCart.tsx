@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLikeCartContext } from "likeCart/store";
+import { useLikeCartContext } from "like_cart/store";
 import { NavLink } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
 

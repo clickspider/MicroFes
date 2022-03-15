@@ -1,5 +1,5 @@
 {
-  "name": "Player",
+  "name": "player",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
@@ -10,8 +10,8 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Jack Herrington",
-    "email": "jherr@pobox.com"
+    "name": "Daniel Frey",
+    "email": "danielfrey101@gmail.com"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",

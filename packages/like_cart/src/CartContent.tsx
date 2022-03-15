@@ -1,5 +1,5 @@
 import React from "react";
-import { useLikeCartContext } from "likeCart/store";
+import { useLikeCartContext } from "like_cart/store";
 
 const CartContent = () => {
   const [likes, setLikes] = useLikeCartContext();

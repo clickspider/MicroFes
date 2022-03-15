@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import { useLikeCartContext } from "likeCart/store";
+import { useLikeCartContext } from "like_cart/store";
 import { Episode } from "home/src/HomeContent";
 
 interface LikeBtnProps {

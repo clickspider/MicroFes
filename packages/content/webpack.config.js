@@ -46,7 +46,7 @@ module.exports = {
       remotes: {
         home: "home@http://localhost:8080/remoteEntry.js",
         player: "player@http://localhost:3000/remoteEntry.js",
-        likeCart: "likeCart@http://localhost:3002/remoteEntry.js",
+        like_cart: "like_cart@http://localhost:3002/remoteEntry.js",
       },
       exposes: {
         "./EpisodeContent": "./src/EpisodeContent"

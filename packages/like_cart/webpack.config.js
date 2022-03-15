@@ -41,12 +41,11 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "likeCart",
+      name: "like_cart",
       filename: "remoteEntry.js",
       remotes: {
         home: "home@http://localhost:8080/remoteEntry.js",
-        likeCart: "likeCart@http://localhost:3002/remoteEntry.js",
-
+        like_cart: "like_cart@http://localhost:3002/remoteEntry.js",
       },
       exposes: {
         "./store": "./src/store",
