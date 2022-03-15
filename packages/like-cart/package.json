@@ -1,5 +1,5 @@
 {
-  "name": "like_cart",
+  "name": "like-cart",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
