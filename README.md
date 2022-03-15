@@ -17,4 +17,4 @@ yarn start
 ![Stock list](HomePage.png)
 ![Stock list](LikeCart.png)
 ![Stock list](episode_content.png)
-![Stock menu](LikeCart.png)
+![Stock menu](favPodcasts.png)
