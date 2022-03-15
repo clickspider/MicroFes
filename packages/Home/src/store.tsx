@@ -28,7 +28,6 @@ export function EpisodesProvider({ children }: Props) {
   useEffect(() => {
     getPodcast().then((res) => {
       if (res.items.length > episodes.length) {
-        console.log(res);
         setEpisodes(res.items);
       }
     });
