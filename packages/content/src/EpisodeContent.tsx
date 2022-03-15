@@ -24,7 +24,7 @@ const EpisodeContent = () => {
   const [episodes] = useEpisodes();
 
   useEffect(() => {
-    if (!Object.keys(episode).length && Object.keys(episodes).length) {
+    if (!episode.enclosure.duration && Object.keys(episodes).length) {
       const e = episodes.find((el: Episode) => el.guid.includes(id));
       setEpisode(e);
     }
