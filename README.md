@@ -14,7 +14,7 @@ yarn start
 - In parallel few other projects are running as well. they are all conntected to the same "host" application, which is located at the folder packages/Home.
 
 ### Demo images
-![Stock list](HomePage.png)
-![Stock list](episode_content.png)
-![Stock menu](favPodcasts.png)
-![Stock list](LikeCart.png)
+![Stock list](images/HomePage.png)
+![Stock list](images/episode_content.png)
+![Stock menu](images/favPodcasts.png)
+![Stock list](images/LikeCart.png)
