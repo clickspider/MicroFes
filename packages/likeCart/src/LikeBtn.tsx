@@ -1,29 +1,23 @@
 import React from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { useLikeCartContext } from "likeCart/store";
+import { Episode } from "home/src/HomeContent";
 
 interface LikeBtnProps {
-  episode: {
-    guid: string;
-    title: string;
-    description: string;
-    thumbnail: string;
-    enclosure: {
-      link: string;
-      duration: string;
-    };
-  };
+  episode: Episode;
 }
 
 const LikeBtn = ({ episode }: LikeBtnProps) => {
   const [likes, setLikes] = useLikeCartContext();
 
-  const isLiked = likes.some((item) => item.guid === episode.guid);
+  const isLiked = likes.some((item: Episode) => item.guid === episode.guid);
 
-  const handleLike = () => setLikes((prev) => [...prev, episode]);
+  const handleLike = () => setLikes((prev: Episode[]) => [...prev, episode]);
 
   const handleDislike = () =>
-    setLikes((prev) => prev.filter((like) => like.guid !== episode.guid));
+    setLikes((prev: Episode[]) =>
+      prev.filter((like) => like.guid !== episode.guid)
+    );
 
   return (
     <button>

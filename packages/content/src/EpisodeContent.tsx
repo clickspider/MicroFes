@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEpisodes } from "home/store";
-import { Episode } from "home/HomeContent";
+import { Episode } from "home/src/HomeContent";
 import MediaPlayer from "player/MediaPlayer";
 
 import LikeBtn from "likeCart/LikeBtn";
 
+const defaultEpisode: Episode = {
+  title: "",
+  guid: "",
+  thumbnail: "",
+  description: "",
+  link: "",
+  enclosure: {
+    link: "",
+    duration: 0,
+  },
+};
+
 const EpisodeContent = () => {
   const { id } = useParams();
-  const [episode, setEpisode] = useState<Episode>({});
+  const [episode, setEpisode] = useState<Episode>(defaultEpisode);
   const [episodes] = useEpisodes();
 
   useEffect(() => {

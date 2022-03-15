@@ -1,0 +1,11 @@
+declare module "home/Header";
+declare module "home/Footer";
+declare module "home/Card";
+declare module "home/store";
+declare module "player/MediaPlayer";
+declare module "player/store";
+declare module "likeCart/MiniLikeCart";
+declare module "home/HomeContent";
+declare module "likeCart/LikeBtn";
+declare module "likeCart/MiniLikeCart";
+declare module "home/MainLayout";

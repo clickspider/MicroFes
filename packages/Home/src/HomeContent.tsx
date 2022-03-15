@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 
 import MediaPlayer from "player/MediaPlayer";
 import Card from "home/Card";

@@ -1,9 +1,15 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Episode } from "home/HomeContent";
+
+import { Episode } from "home/src/HomeContent";
 import LikeBtn from "likeCart/LikeBtn";
 
-const Card: React.FC = ({ episode, children }: Episode) => {
+interface podcastCardProps {
+  episode: Episode;
+  children: React.ReactNode;
+}
+
+const Card = ({ episode, children }: podcastCardProps) => {
   const { thumbnail, title, description, guid } = episode;
   const id = useMemo(() => guid.split("/")[1], [guid]);
 
