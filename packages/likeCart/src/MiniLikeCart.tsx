@@ -10,7 +10,8 @@ const MiniLikeCart = () => {
   return (
     <>
       <button onClick={() => setShowCart(!showCart)}>
-        <AiFillHeart className="inline" /> ({likes.length})
+        <AiFillHeart className="inline" style={{ fill: "red" }} /> (
+        {likes.length})
       </button>
       {showCart && (
         <>

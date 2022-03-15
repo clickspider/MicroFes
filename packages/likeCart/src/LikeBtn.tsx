@@ -22,9 +22,9 @@ const LikeBtn = ({ episode }: LikeBtnProps) => {
   return (
     <button>
       {isLiked ? (
-        <AiFillHeart onClick={handleDislike} />
+        <AiFillHeart style={{ fill: "red" }} onClick={handleDislike} />
       ) : (
-        <AiOutlineHeart onClick={handleLike} />
+        <AiOutlineHeart style={{ fill: "red" }} onClick={handleLike} />
       )}
     </button>
   );
