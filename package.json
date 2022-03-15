@@ -1,0 +1,19 @@
+{
+  "name": "micro-fes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/clickspider/MicroFes.git",
+  "author": "clickspider <danielfrey101@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "wsrun": "^5.2.4"
+  }
+}
