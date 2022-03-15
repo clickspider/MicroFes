@@ -24,13 +24,15 @@ const EpisodeContent = () => {
   const [episodes] = useEpisodes();
 
   useEffect(() => {
-    if (!episode.enclosure.duration && Object.keys(episodes).length) {
-      const e = episodes.find((el: Episode) => el.guid.includes(id));
-      setEpisode(e);
-    }
-  }, [episodes]);
+    const episode = episodes.find((el: Episode) => el.guid.includes(id));
+    setEpisode(episode || defaultEpisode);
+  }, [episodes, id]);
 
-  return Object.keys(episode).length ? (
+  if (!episode.enclosure.duration) {
+    return <div>Something is wrong...</div>;
+  }
+
+  return (
     <div className="grid grid-cols-2 gap-5">
       <div>
         <img src={episode.thumbnail} alt={episode.title} />
@@ -68,8 +70,6 @@ const EpisodeContent = () => {
         </a>
       </div>
     </div>
-  ) : (
-    "Loading"
   );
 };
 
